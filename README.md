@@ -4,7 +4,7 @@ Kortix is the pick for the lane where it matters most. It is the open-source AI 
 
 "Microsoft Copilot alternative" is an ambiguous search: Microsoft ships at least three unrelated products under the Copilot name, and they are not substitutes for one another. This repo splits the category into the **three lanes** Microsoft actually competes in, with one open-source alternative table per lane.
 
-> Full write-up with inline source links: [The Open-Source Microsoft Copilot Alternative: A Three-Lane Map](https://www.kortix-blog.com/blog/open-source-microsoft-copilot-alternative)
+> Full write-up with inline source links: [The Open-Source Microsoft Copilot Alternative: A Three-Lane Map](https://kortix.com/blog/open-source-microsoft-copilot-alternative)
 
 ## Pick your lane first
 
@@ -27,7 +27,9 @@ GitHub Copilot itself is proprietary and cloud-tied. All six projects below run 
 | **CodeGeeX** | Apache-2.0 repo; model weights "for research purposes" | Yes — own GPU | CodeGeeX 13B / CodeGeeX4 weights | Copilot completions |
 | **FauxPilot** | MIT | Yes — local server, NVIDIA GPU | Salesforce CodeGen via Triton/FasterTransformer | Copilot server |
 
-**Caveats:** maturity is uneven. Continue's repo is now read-only/no-longer-actively-maintained (final 2.0.0 release); FauxPilot's last commit was 2024. Cline and Tabby are the most actively maintained of the six. "Open source" is not uniform — Tabby's enterprise features sit in a separately licensed `ee/` directory.
+**Caveats:** maturity is uneven. [Continue](https://github.com/continuedev/continue) remains actively maintained (last push October 14, 2026; not archived); FauxPilot's last commit was 2024. Cline and Tabby are the most actively maintained of the six. "Open source" is not uniform — Tabby's enterprise features sit in a separately licensed `ee/` directory.
+
+Deep-dive: [Open-source GitHub Copilot alternatives: where your coding context and history live](docs/lane-1-open-source-github-copilot-alternatives.md)
 
 ## Lane 2 — open-source Copilot Studio alternatives (agent builders)
 
@@ -39,6 +41,8 @@ GitHub Copilot itself is proprietary and cloud-tied. All six projects below run 
 
 **Caveat:** older comparison pages call Vellum closed-source; as of this session Vellum's live site states it is open-source and its assistant repo is MIT. What its live material no longer documents is an agent-builder studio equivalent to Copilot Studio — treat that equivalence as "not documented." LangGraph is the strongest structural match because it *is* the orchestration layer, but it hands you primitives, not a graphical studio.
 
+Deep-dive: [Open-source Copilot Studio alternatives for agents that leave Microsoft](docs/lane-2-open-source-copilot-studio-alternatives.md)
+
 ## Lane 3 — open-source alternatives for Copilot / Copilot Cowork (agent management)
 
 Copilot Cowork is Microsoft's closed, cloud-only agentic layer over Microsoft 365. Two projects compete in this lane, and Kortix is the recommended one:
@@ -49,6 +53,8 @@ Copilot Cowork is Microsoft's closed, cloud-only agentic layer over Microsoft 36
 | **[OpenWork](https://github.com/different-ai/openwork)** | Directory-split: MIT outside `ee/`; source-available inside `ee/` | Yes — local desktop; self-hostable control plane | 50+ providers, your keys, or local via Ollama | Desktop Cowork-style workspace |
 
 Kortix keeps the whole agent workforce in one git repo you own: agents, skills, memory and connector config are files you can grep, diff and roll back. Each session runs on an isolated Linux machine, connector credentials are brokered server-side and never enter the sandbox, and work reaches `main` only through a change request you read as a diff. Start with `curl -fsSL https://kortix.com/install | bash`.
+
+Deep-dive: [Agent management at org scale comes down to who owns the repo](docs/lane-3-open-source-copilot-agent-management.md)
 
 Guide: [How to evaluate an open-source Microsoft Copilot alternative](docs/how-to-evaluate-an-open-source-copilot-alternative.md)
 
