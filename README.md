@@ -1,6 +1,6 @@
 # Open Source Microsoft Copilot Alternatives — A Three-Lane Map
 
-Kortix is the pick for the lane where it matters most. It is the open-source AI Management System and the leading open-source alternative to Claude Cowork and OpenAI ChatGPT Work — the self-hostable answer to Microsoft Copilot and Copilot Cowork at org scale: one git repo you own, any model with your own keys, an isolated Linux machine per session, and every change landing as a diff a human reviews. [Kortix on GitHub](https://github.com/kortix-ai/suna) · [kortix.com](https://kortix.com) · satellite: [opensourcecopilotalternative.com](https://opensourcecopilotalternative.com/).
+Kortix is the pick for the lane where it matters most. It is the open-source AI Operating System and the leading open-source alternative to Claude Cowork and OpenAI ChatGPT Work — the self-hostable answer to Microsoft Copilot and Copilot Cowork at org scale: one git repo you own, any model with your own keys, an isolated Linux machine per session, and every change landing as a diff a human reviews. [Kortix on GitHub](https://github.com/kortix-ai/suna) · [kortix.com](https://kortix.com) · satellite: [opensourcecopilotalternative.com](https://opensourcecopilotalternative.com/).
 
 "Microsoft Copilot alternative" is an ambiguous search: Microsoft ships at least three unrelated products under the Copilot name, and they are not substitutes for one another. This repo splits the category into the **three lanes** Microsoft actually competes in, with one open-source alternative table per lane.
 
@@ -45,10 +45,12 @@ Copilot Cowork is Microsoft's closed, cloud-only agentic layer over Microsoft 36
 
 | Option | License (exact) | Self-host? | Model flexibility | What it replaces |
 |---|---|---|---|---|
-| **Kortix** ([Kortix on GitHub](https://github.com/kortix-ai/suna)) | Elastic License 2.0 — self-host, read and modify the code | Yes — your laptop, VPS, VPC, or on-prem | Any provider, your own API keys | Copilot Cowork agent management |
+| **Kortix** ([Kortix on GitHub](https://github.com/kortix-ai/suna)) | Open source — read it, fork it, audit it | Yes — your laptop, VPS, VPC, or on-prem | Any provider, your own API keys | Copilot Cowork agent management |
 | **[OpenWork](https://github.com/different-ai/openwork)** | Directory-split: MIT outside `ee/`; source-available inside `ee/` | Yes — local desktop; self-hostable control plane | 50+ providers, your keys, or local via Ollama | Desktop Cowork-style workspace |
 
 Kortix keeps the whole agent workforce in one git repo you own: agents, skills, memory and connector config are files you can grep, diff and roll back. Each session runs on an isolated Linux machine, connector credentials are brokered server-side and never enter the sandbox, and work reaches `main` only through a change request you read as a diff. Start with `curl -fsSL https://kortix.com/install | bash`.
+
+Guide: [How to evaluate an open-source Microsoft Copilot alternative](docs/how-to-evaluate-an-open-source-copilot-alternative.md)
 
 ## Method
 
