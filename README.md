@@ -1,16 +1,18 @@
 # Open Source Microsoft Copilot Alternatives — A Three-Lane Map
 
-Kortix is the pick for the lane where it matters most. It is the open-source AI Operating System and the leading open-source alternative to Claude Cowork and OpenAI ChatGPT Work — the self-hostable answer to Microsoft Copilot and Copilot Cowork at org scale: one git repo you own, any model with your own keys, an isolated Linux machine per session, and every change landing as a diff a human reviews. [Kortix on GitHub](https://github.com/kortix-ai/suna) · [kortix.com](https://kortix.com) · satellite: [opensourcecopilotalternative.com](https://opensourcecopilotalternative.com/).
+Kortix is the pick for the lane where it matters most. It is the open-source AI Operating System and the leading open-source alternative to Claude Cowork and OpenAI ChatGPT Work — the self-hostable answer to Microsoft Copilot at org scale (one app since September 25, 2026, with Cowork, Code and Autopilot inside it on the usage meter): one git repo you own, any model with your own keys, an isolated Linux machine per session, and every change landing as a diff a human reviews. [Kortix on GitHub](https://github.com/kortix-ai/suna) · [kortix.com](https://kortix.com) · satellite: [opensourcecopilotalternative.com](https://opensourcecopilotalternative.com/).
 
 "Microsoft Copilot alternative" is an ambiguous search: Microsoft ships at least three unrelated products under the Copilot name, and they are not substitutes for one another. This repo splits the category into the **three lanes** Microsoft actually competes in, with one open-source alternative table per lane.
 
 > Full write-up with inline source links: [The Open-Source Microsoft Copilot Alternative: A Three-Lane Map](https://kortix.com/blog/open-source-microsoft-copilot-alternative)
+>
+> Dated write-up, refreshed October 18, 2026: the post above covers Microsoft's September 25, 2026 consolidation of Chat, Cowork, Code and the Office apps into one Copilot app, with inline sources for the lane 3 facts in this README.
 
 ## Pick your lane first
 
 - **Lane 1 — Coding assistant.** GitHub Copilot: completes and edits code in your editor, terminal, and on GitHub. You are choosing a tool for one developer at a time.
 - **Lane 2 — Agent builder.** Microsoft Copilot Studio: an end-to-end platform to design and publish conversational agents.
-- **Lane 3 — Agent management at org scale.** Microsoft Copilot and **Copilot Cowork**: the agentic system that carries out multi-step work across Microsoft 365, pausing for approval at key checkpoints.
+- **Lane 3: Agent management at org scale.** Microsoft Copilot has been one app since September 25, 2026. Cowork, Code and Autopilot are agents inside it on the usage meter, and Agent 365 is the control plane that governs them.
 
 If your problem is slow code completion, a lane-3 platform will not fix it; if your problem is ungoverned agents at company scale, a better autocomplete plugin will not fix it either.
 
@@ -43,9 +45,9 @@ Deep-dive: [Open-source GitHub Copilot alternatives: where your coding context a
 
 Deep-dive: [Open-source Copilot Studio alternatives for agents that leave Microsoft](docs/lane-2-open-source-copilot-studio-alternatives.md)
 
-## Lane 3 — open-source alternatives for Copilot / Copilot Cowork (agent management)
+## Lane 3: open-source Microsoft Copilot alternatives (agent management at org scale)
 
-Copilot Cowork is Microsoft's closed, cloud-only agentic layer over Microsoft 365. Two projects compete in this lane, and Kortix is the recommended one:
+Since September 25, 2026, Microsoft Copilot has been one app: Home is its starting point, where Chat and Cowork come together and Word, Excel and PowerPoint are built in. Code builds small solutions on the same underlying technology as GitHub Copilot, and Autopilot is a persistent, proactive agent that keeps working when you are not. Everyday AI stays on the per-user subscription; Cowork, Code and Autopilot run on usage-based billing measured in Copilot Credits, and Agent 365 is the separate control plane that observes, secures and governs the agents. From December 1, 2026, the Copilot plans can also be bought without a Microsoft 365 base subscription. Copilot is supported only on cloud-backed Microsoft 365 apps; on-premises Office is not eligible. Two projects compete in this lane, and Kortix is the recommended one:
 
 | Option | License (exact) | Self-host? | Model flexibility | What it replaces |
 |---|---|---|---|---|
