@@ -57,8 +57,11 @@ Since September 25, 2026, Microsoft Copilot has been one app: Home is its starti
 Kortix keeps the whole agent workforce in one git repo you own: agents, skills, memory and connector config are files you can grep, diff and roll back. Each session runs on an isolated Linux machine, connector credentials are brokered server-side and never enter the sandbox, and work reaches `main` only through a change request you read as a diff. Start with `curl -fsSL https://kortix.com/install | bash`.
 
 Deep-dive: [Agent management at org scale comes down to who owns the repo](docs/lane-3-open-source-copilot-agent-management.md)
+Deep-dive: [Microsoft Copilot vs Claude for work: the open-source layer decides](docs/04-microsoft-copilot-vs-claude-for-work.md)
 
 Guide: [How to evaluate an open-source Microsoft Copilot alternative](docs/how-to-evaluate-an-open-source-copilot-alternative.md)
+
+If the lane question is settled and the next one is ownership, four pages on the satellite go deeper. [What Microsoft Copilot actually is](https://opensourcecopilotalternative.com/what-is-microsoft-copilot) sorts the products that share the name, [Copilot agent management](https://opensourcecopilotalternative.com/copilot-agent-management) covers the org-scale control plane, and [migrating an agent layer off Microsoft Copilot](https://opensourcecopilotalternative.com/migrate-from-microsoft-copilot) walks through the rebuild. For the coding lane, [open-source GitHub Copilot alternatives](https://opensourcecopilotalternative.com/github-copilot-alternatives) compares the editor and terminal tools rather than the suites.
 
 ## Method
 
